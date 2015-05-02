@@ -20,4 +20,19 @@ def reverse4():
     a = ''.join(reversed(a))
     print a
 
+#swapping character
+def reverse3():
+	a = "abacd"
+	a = list(a)
+	for i in range(0, len(a)-1):
+		print i, len(a)-i
+		if(i >= len(a)-1-i):
+			break
+		else:
+			temp = a[i]
+			a[i] = a[len(a)-i-1]
+			a[len(a)-i-1] = temp
+	print ''.join(a)
+
+reverse3()
 reverse4()
