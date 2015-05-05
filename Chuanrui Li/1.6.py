@@ -1,3 +1,6 @@
+# Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. Can you do this in place?
+
+
 # (1,2,3),(4
 # (5,6,7,8
 # 9,10,11,12),
@@ -19,7 +22,7 @@
 # 1, delete the first and last rows
 # 2, delete the most left and most right boundary in the rest of the rows
 # 6,7
-# 10,11  
+# 10,11
 
 # 7,11
 # 6,10
@@ -36,9 +39,11 @@ def matrix():
     second = []
     third = []
     forth = []
-    a = [[0, 1, 2],[3, 4, 5], [6, 7, 8]]
-
-#     a = [[0, 1, 2, 3, 4],[5, 6, 7, 8, 9], [10, 11, 12, 13, 14],[15, 16, 17, 18, 19], [20, 21, 22, 23, 24]]
+    a = [[0, 1, 2, 3, 4],[5, 6, 7, 8, 9], [10, 11, 12, 13, 14], [15, 16, 17, 18, 19],[20, 21, 22, 23, 24]]
+    for i in a:
+        print i
+    
+    #     a = [[0, 1, 2, 3, 4],[5, 6, 7, 8, 9], [10, 11, 12, 13, 14],[15, 16, 17, 18, 19], [20, 21, 22, 23, 24]]
     #the counter function
     row = 0
     column = 0
@@ -58,42 +63,39 @@ def matrix():
                 # (4, 8, 12) -> ending number in the list 1, 2, 3
                 if(i != len(a)-row-1 and j == len(a[i])-1-column):
                     forth.append(a[i][j])
-
-
-
+    
+    
+    
         index1 = index3 = index4 = 0
-        index2 = index4 = len(first) -1 - row
+        index2 = index4 = len(first) - 1
         for i in range(row, len(a)-row):
             for j in range(column, len(a[i])-column):
                 if(i == row and j < len(a[i])-1-column):
-                        a[i][j] = forth[index1]
-                        index1 += 1
+                    a[i][j] = forth[index1]
+                    index1 += 1
                 if(i != row and j == column):
-                        a[i][j] = first[index2]
-                        index2 -=1
+                    a[i][j] = first[index2]
+                    index2 -=1
                 if(i == len(a)-row-1 and j > column and j < len(a[i])-column):
-                        a[i][j] = second[index3]
-                        index3 += 1
+                    a[i][j] = second[index3]
+                    index3 += 1
                 if(i != len(a)-row-1 and j == len(a[i])-1-column):
-                        a[i][j] = third[index4]
-                        index4 -=1
-
-
+                    a[i][j] = third[index4]
+                    index4 -=1
+    
+        
         first = []
         second = []
         third = []
         forth = []
-        row += 1  
+        row += 1
         column += 1
         counter += 1
-    print first, second, third, forth
-    print a
-#     for i in a:
-#         for j in i:
-#             if(i == 1 &&):
-#                 first.extend(j)
-#                 print j
-        
-        
+    #print first, second, third, forth
+    #print a
+    for j in a:
+        print j
+
+
 matrix()
-            
+
