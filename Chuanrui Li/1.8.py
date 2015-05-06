@@ -2,14 +2,14 @@
 
 # input: s1 “waterbottle”     s2 “erbottlewat”
 # output: true or false
-    
+
 # 1), if the length of s1 and s2 are not equal, then s1 and s2 are not a rotate substring, else go to 2)
 # 2), if s3 = s1+s1
 # 3), check if s2 is substring of s3 , if yes, true, if no, false
 def rotate_string():
     s1 = "waterbottle"
     s2 = "erbottlewat"
-
+    
     if(len(s1) != len(s2)):
         print "false"
     else:
@@ -21,10 +21,21 @@ def rotate_string():
 #fast way to check the substring
 def check():
     s3 = "waterbottlewaterbottle"
-    s1 = "erbottlewat"
-    for i in s3:
-            print 
-            
+    s1 = "erbottlwat"
+    s3_counter = 0
+    s1_counter = 0
+    while (s3_counter < len(s3)):
+        if(s3[s3_counter] == s1[s1_counter]):
+            s3_counter += 1
+            s1_counter += 1
+            if(s1_counter == len(s1)):
+                print "DONE"
+                break
         
+        else:
+            s1_counter = 0
+            s3_counter += 1
+    print "not found"
+
+
 check()
-    
