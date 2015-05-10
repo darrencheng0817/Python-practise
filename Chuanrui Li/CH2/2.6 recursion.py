@@ -67,6 +67,35 @@ def palidrome(node):
         node = pre
     return node
 
+
+def palidrome_r(node):
+    if(node.nextNode == None):
+        head = node
+        return
+    palidrome_r(node.nextNode)
+    node.nextNode.nextNode = node
+    node.nextNode = None
+
+# public void recursiveReverse(Node currentNode )
+# {  
+#  //check for empty list 
+#  if(currentNode == NULL)
+#     return;
+
+# if(currentNode.next == NULL) 
+# { 
+# //set HEAD to current TAIL since we are reversing list
+# head = currentNode; 
+# return; //since this is the base case
+# }
+
+# recursiveReverse(currentNode.next);
+# currentNode.next.next = currentNode;
+# currentNode.next = null;
+# }
+
+        
+        
 def comparison(old, new):
     i = 0
     while(i < len(old)):
@@ -84,8 +113,8 @@ def comparison(old, new):
 node = Node("0")
 node1 = Node("1")
 node2 = Node("2")
-node3 = Node("1")
-node4 = Node("0")
+node3 = Node("4")
+node4 = Node("5")
 
 
 node.nextNode = node1
@@ -93,17 +122,9 @@ node1.nextNode = node2
 node2.nextNode = node3
 node3.nextNode = node4
 
+palidrome_r(node)
+printn(node4)
+#https://www.youtube.com/watch?v=KYH83T4q6Vs
 
-
-old = []
-start = node
-while(start != None):
-    old.append(start.data)
-    start = start.nextNode
-print old
-new_node = palidrome(node)
-printn(new_node)
-comparison(old, new_node)
-
-
-
+#problem cannot set the head of the node in the recursion
+#ans: global head declaration can solve the problem
