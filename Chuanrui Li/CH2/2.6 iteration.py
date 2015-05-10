@@ -105,5 +105,7 @@ new_node = palidrome(node)
 printn(new_node)
 comparison(old, new_node)
 
+#rerererere
+
 
 

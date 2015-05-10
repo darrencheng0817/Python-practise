@@ -1,0 +1,8 @@
+#Imagine a (literal) stack of plates. If the stack gets too high, it might topple. There- fore, in real life, we would likely start a new stack when the previous stack exceeds some threshold. Implement a data structure SetOfStacks that mimics this. SetOf- Stacks should be composed of several stacks, and should create a new stack once the previous one exceeds capacity. SetOfStacks.push() and SetOfStacks.pop() should behave identically to a single stack (that is, pop() should return the same values as it would if there were just a single stack).
+#FOLLOW UP
+#Implement a function popAt(int index) which performs a pop operation on a specific sub-stack.
+
+
+1), Create a stack by list and create a list of 
+2), When hit the limit of the list, 
+3), testing
