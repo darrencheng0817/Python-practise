@@ -54,7 +54,10 @@ node1.nextNode = node2
 node2.nextNode = node3
 node3.nextNode = node4
 
+
+deleteNode(node2)
 deleteNode(node3)
+
 printn(node)
 
 
