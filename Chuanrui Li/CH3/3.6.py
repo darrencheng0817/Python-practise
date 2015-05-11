@@ -26,20 +26,16 @@ class Stack:
      def sort(self, s2):
 	  first = 0
           while self.items != []:
-	       flag = 0
 	       if first != 0:
-		    print self.size(), s2.size()
-		    while s2.peek() > self.peek(): 
-#			 back = s2.pop()
-			 #print back
-			 current = self.pop()
-			 flag = 1
+		    current = self.pop()
+		    while s2.peek() > current: 
+			 self.push(s2.pop())	 
 			 if s2.items == []:
 			      break
-	       s2.push(self.pop())
-	       if flag == 1:
-		    self.push(back)
-	       first = 1
+		    s2.push(current)
+	       else:
+		    s2.push(self.pop())
+		    first = 1
           
                
                   
@@ -49,6 +45,9 @@ s1.push(7)
 s1.push(10)
 s1.push(5)
 s1.push(11)
+s1.push(1)
+s1.push(111)
+print s1.items
 s1.sort(s2)
 print s2.items
 
