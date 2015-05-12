@@ -4,7 +4,7 @@
 #2,) insert the data into the BST
 
 
-array = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+array = [0, 1, 2, 3, 4, 5, 6, 7]
 class Node:
     def __init__(self, data):
         self.left = None
@@ -33,7 +33,6 @@ def insert(array, begin, end):
     if mid == 0:
         return Node(array[0])
     elif mid == len(array)-2 and mid == begin:
-        print "hehe"
         return Node(array[-1])
     elif mid == begin:
         return 
@@ -51,7 +50,7 @@ def printn(root):
     print root.data
 
 root = Node(9)
-node = insert(array, 0, 8)	
+node = insert(array, 0, 7)	
 printn(node)
 
 
