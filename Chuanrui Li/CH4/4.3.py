@@ -1,50 +1,59 @@
-#Implement a function to check if a tree is balanced. For the purposes of this question, a balanced tree is defined to be a tree such that no two leaf nodes differ in distance from the root by more than one.
+#Given a binary search tree, design an algorithm which creates a linked list of all the nodes at each depth (i.e., if you have a tree with depth D, you’ll have D linked lists).
 
-1), this approach seperates the height calculation and balance check (bottom up)
-2), better design, create a shortcut for subproblem, if the subtree does is not balance, we return at once, do not follow the original stack call back. -> space cost: O(h) this is the size of the stack, time cost: O(n) T(n) = 2T(n/2) + 1
-
-class Node(object):
-  def __init__(self, data, left=None, right=None):
-    self.data = data
-    self.left = left
-    self.right = right
-
-#def traverse(rootnode):
-  #thislevel = [rootnode]
-  #while thislevel:
-    #nextlevel = list()
-    #for n in thislevel:
-      #print n.value,
-      #if n.left: nextlevel.append(n.left)
-      #if n.right: nextlevel.append(n.right)
-    #print
-    #thislevel = nextlevel
-
-t = Node(1, Node(2, Node(4)), Node(3))
+#1,) read the array from mid, even -> odd + 1
+#2,) insert the data into the BST
 
 
+array = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+class Node:
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data
+
+
+
+#why this part does not work       
+#def insert(array, begin, end, node):
+    #mid = (begin + end)/2
+    #if mid == begin:
+        #return
+    #else:
+        #node = Node(array[mid])
+        #insert(array, begin, mid, node.left)
+        #insert(array, mid, end, node.right)
+        
+#root = Node(9)
+#insert(array, 0, 8, root)	
+#print root.left
+
+
+def insert(array, begin, end):
+    mid = (begin + end)/2
+    if mid == 0:
+        return Node(array[0])
+    elif mid == len(array)-2 and mid == begin:
+        print "hehe"
+        return Node(array[-1])
+    elif mid == begin:
+        return 
+    else:
+        node = Node(array[mid])
+        node.left = insert(array, begin, mid)
+        node.right = insert(array, mid, end)
+        return node
 #postorder print left, right, root
 def printn(root):
-  if root == None:
-    return
-  printn(root.left)
-  printn(root.right)
-  print root.data
+    if root == None:
+        return
+    printn(root.left)
+    printn(root.right)
+    print root.data
+
+root = Node(9)
+node = insert(array, 0, 8)	
+printn(node)
 
 
-def height(node):
-  if node == None:
-    return 0
-  else:
-    return max(height(node.left), height(node.right)) + 1
-  
-  
+
     
-def balanced(root):
-  if root == None:
-    return True
-  else:
-    return balanced(root.left) and balanced(root.right) and abs(height(root.left) - height(root.right)) < 1
-  
-haha = balanced(t)
-print haha

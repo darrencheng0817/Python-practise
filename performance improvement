@@ -1,3 +1,6 @@
 1.6 -> by index
 1.7 -> in place boolean
 2.5 -> linked list add
+4.1 -> better design(performance)
+4.2 -> using nodes and set color for each node
+4.3 -> why it does not work
