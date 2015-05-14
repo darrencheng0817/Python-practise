@@ -1,7 +1,8 @@
-#Implement a function to check if a tree is balanced. For the purposes of this question, a balanced tree is defined to be a tree such that no two leaf nodes differ in distance from the root by more than one.
+#Implement a function to check if a binary tree is a binary search tree
 
-1), this approach seperates the height calculation and balance check (bottom up)
-2), better design, create a shortcut for subproblem, if the subtree does is not balance, we return at once, do not follow the original stack call back. -> space cost: O(h) this is the size of the stack, time cost: O(n) T(n) = 2T(n/2) + 1
+#1), Inorder walk (left, root, right) and store the element in the list
+#2), print the value one by one 
+#3), check the size of integer, which should be an increasing order
 
 class Node(object):
   def __init__(self, data, left=None, right=None):
@@ -9,19 +10,8 @@ class Node(object):
     self.left = left
     self.right = right
 
-#def traverse(rootnode):
-  #thislevel = [rootnode]
-  #while thislevel:
-    #nextlevel = list()
-    #for n in thislevel:
-      #print n.value,
-      #if n.left: nextlevel.append(n.left)
-      #if n.right: nextlevel.append(n.right)
-    #print
-    #thislevel = nextlevel
-
-t = Node(1, Node(2, Node(4)), Node(3))
-
+t = Node(3, Node(2, Node(1)), Node(0))
+lista = []
 
 #postorder print left, right, root
 def printn(root):
@@ -30,21 +20,39 @@ def printn(root):
   printn(root.left)
   printn(root.right)
   print root.data
-
-
-def height(node):
+ 
+#Inorder walk (left, root, right) 
+def store_inorder(node):
+  global lista
   if node == None:
-    return 0
+    return 
   else:
-    return max(height(node.left), height(node.right)) + 1
-  
-  
+    store_inorder(node.left)
+    lista.append(node.data)
+    store_inorder(node.right)
     
-def balanced(root):
-  if root == None:
-    return True
-  else:
-    return balanced(root.left) and balanced(root.right) and abs(height(root.left) - height(root.right)) < 1
+
+def checker(lista):
+  flag = 0
+  pre = float("-inf")
+  for i in lista:
+    if flag == 0:
+      pre = i
+      flag = 1
+    else:
+      if i < pre:
+        print "Not a BST"
+        break
+      else:
+        pre = i
+      
+store_inorder(t)   
+print lista
+checker(lista)
+
+
+    
+    
+    
+    
   
-haha = balanced(t)
-print haha

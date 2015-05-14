@@ -1,50 +1,79 @@
-#Implement a function to check if a tree is balanced. For the purposes of this question, a balanced tree is defined to be a tree such that no two leaf nodes differ in distance from the root by more than one.
+#Write an algorithm to find the ‘next’ node (i.e., in-order successor) of a given node in a binary search tree where each node has a link to its parent.
 
-1), this approach seperates the height calculation and balance check (bottom up)
-2), better design, create a shortcut for subproblem, if the subtree does is not balance, we return at once, do not follow the original stack call back. -> space cost: O(h) this is the size of the stack, time cost: O(n) T(n) = 2T(n/2) + 1
-
+#build up the BST
 class Node(object):
-  def __init__(self, data, left=None, right=None):
+  def __init__(self, data, parent = None, left=None, right=None):
     self.data = data
+    self.parent = parent    
     self.left = left
     self.right = right
+    
+    
+  def insert(self, data):
+    #check the root data first
+    if self.data:
+      #check the right hand side
+      if(self.data > data):
+        if self.left is None:
+          self.left = Node(data, self)
+        else:
+          self.left.insert(data)
+      elif(self.data < data):
+        if self.right is None:
+          self.right = Node(data, self)
+        else:
+          self.right.insert(data)
+    else:
+      self.data = data
+        
+#building the BST
+root = Node(42, None)
+root.insert(45)
+root.insert(25)
+root.insert(12)
+root.insert(37)
+root.insert(9)
+root.insert(13)
+root.insert(40)
 
-#def traverse(rootnode):
-  #thislevel = [rootnode]
-  #while thislevel:
-    #nextlevel = list()
-    #for n in thislevel:
-      #print n.value,
-      #if n.left: nextlevel.append(n.left)
-      #if n.right: nextlevel.append(n.right)
-    #print
-    #thislevel = nextlevel
+#testing
+#print root.left.left.parent.parent.right.data
 
-t = Node(1, Node(2, Node(4)), Node(3))
-
-
-#postorder print left, right, root
+#inorder print left, root, right
 def printn(root):
   if root == None:
     return
   printn(root.left)
-  printn(root.right)
   print root.data
+  printn(root.right)
 
+#1), if the node has a right subtree, largest value in the right subtree is the next value to be selected
+#2), if the node does not have a right subtree, let the pointer keep going up through the right path, if the pointer faces a left path, this is the next value to be selected
+#3), if the node is the biggest node in the tree, it will not be considered
 
-def height(node):
-  if node == None:
-    return 0
+def nextValue(node):
+  #node has a right subtree
+  if(node.left != None):
+    return find_most_left(node.right)
+  #node does have a right subtree
   else:
-    return max(height(node.left), height(node.right)) + 1
-  
-  
+    while(node.parent != None):
+      if node.parent.right == node:
+        node = node.parent
+      else:
+        break;
+    if node.parent == None:
+      print "third case, the last element"
+      return Node("hehe", None)
+    return node.parent
     
-def balanced(root):
-  if root == None:
-    return True
-  else:
-    return balanced(root.left) and balanced(root.right) and abs(height(root.left) - height(root.right)) < 1
-  
-haha = balanced(t)
-print haha
+
+def find_most_left(node):
+  while node.left != None:
+    node = node.left
+  return node
+
+new = root
+print new.data
+print nextValue(new).data
+
