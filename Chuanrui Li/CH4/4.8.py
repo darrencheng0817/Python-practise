@@ -1,4 +1,4 @@
-#Write an algorithm to find the ‘next’ node (i.e., in-order successor) of a given node in a binary search tree where each node has a link to its parent.
+#You have two very large binary trees: T1, with millions of nodes, and T2, with hun- dreds of nodes. Create an algorithm to decide if T2 is a subtree of T1.
 
 #build up the BST
 class Node(object):
@@ -26,7 +26,7 @@ class Node(object):
     else:
       self.data = data
         
-#building the BST
+#building the BST (T1)
 root = Node(42, None)
 root.insert(45)
 root.insert(25)
@@ -35,6 +35,16 @@ root.insert(37)
 root.insert(9)
 root.insert(13)
 root.insert(40)
+
+#building the BST subtree (T2)
+roots = Node(12, None)
+roots.insert(9)
+roots.insert(13)
+
+roots1 = Node(13, None)
+
+
+
 
 #testing
 #print root.left.left.parent.parent.right.data
@@ -46,34 +56,79 @@ def printn(root):
   printn(root.left)
   print root.data
   printn(root.right)
+  
 
-#1), if the node has a right subtree, largest value in the right subtree is the next value to be selected
-#2), if the node does not have a right subtree, let the pointer keep going up through the right path, if the pointer faces a left path, this is the next value to be selected
-#3), if the node is the biggest node in the tree, it will not be considered
-
-def nextValue(node):
-  #node has a right subtree
-  if(node.left != None):
-    return find_most_left(node.right)
-  #node does have a right subtree
+#check the subtree matching, only when the root of T2 matches the node in T1 -> O(n + Km)
+def treecheck(T1, T2):
+  #both hit the end of the tree
+  if T1 == T2 == None:
+    return True
+  #only one hits the end of the tree
+  elif T1 == None and T2 != None:
+    return False
+  elif T2 == None and T1 != None:
+    return False
+  #two tree have different data, so T2 is not a
+  elif T1.data != T2.data:
+    return False
   else:
-    while(node.parent != None):
-      if node.parent.right == node:
-        node = node.parent
-      else:
-        break;
-    if node.parent == None:
-      print "third case, the last element"
-      return Node("hehe", None)
-    return node.parent
+    #continue checkin both right and left hand side
+    return treecheck(T1.right, T2.right) and treecheck(T1.left, T2.left)
+  
+  
+#check the starting point and subtree
+def checker(T1, T2):
+  #empty tree, then it should return 1
+  if T2 == None:
+    return True
+  if T1 == None:
+    return False
+  elif T1.data == T2.data:
+    return treecheck(T1, T2) 
+  else:
+    return checker(T1.left, T2) or checker(T1.right, T2)
     
+print checker(root, roots)
 
-def find_most_left(node):
-  while node.left != None:
-    node = node.left
-  return node
 
-new = root
-print new.data
-print nextValue(new).data
 
+
+#slower approach(in order walk + brute force) -> I would say this method is same as previous one (O(n + Km))
+#but using extra memory to store two lists are the overheat
+#I think the good point is to insert null in the list to prevent the duplicated nodes cases
+list1 = []
+list2 = []
+def inorder(T1):
+  global list1
+  if T1 == None:
+    list1.extend([None])
+    return
+  inorder(T1.left)
+  list1.extend([T1.data])
+  inorder(T1.right) 
+  
+def inorder2(T1):
+  global list2
+  if T1 == None:
+    list2.extend([None])
+    return
+  inorder2(T1.left)
+  list2.extend([T1.data])
+  inorder2(T1.right) 
+  
+inorder(roots)
+inorder2(root)
+print list1
+print list2#T1
+i = 0
+while(i < len(list2)):
+  if (list2[i] == list1[0]):
+    temp1 = 0
+    while(temp1 < len(list1)):
+      if(list2[temp1] != list1[temp1] or temp1 + i >= len(list2)):
+        break
+      temp1 += 1
+    if temp1 == len(list1):
+      print "found"
+      break
+  i += 1
