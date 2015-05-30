@@ -1,100 +1,43 @@
-#you are given a binary tree in which each node contains a value. Design an algorithm to print all paths which sum up to that value. Note that it can be any path in the tree - it does not have to start at the root.
+#You are given two 32-bit numbers, N and M, and two bit positions, i and j. Write a method to set all bits between i and j in N equal to M (e.g., M becomes a substring of N located at i and starting at j).
+#EXAMPLE:
+#Input: N = 10000000000, M = 10101, i = 2, j = 6
+#Output: N = 10001010100
+
+#1), Convert number into a list of digits: 10000000000, 10101
+#2), Start at the begnning point i, add the digit into the N list
+
+N = 10000000000
+M = 1023
+
+N = str(N)
+M = str(M)
+star = 3
+end = 5
+
+list1 = []
+list2 = []
+for i in str(N):
+    list1.extend([int(i)])
+for j in str(M):
+    list2.extend([int(j)])
+
+for index in range(0, len(list1)):
+    if index == star:
+        #change the value of each point
+        while index <= end:
+            if index >= len(list2) + star:
+                break;
+            else:
+                list1[-index-1] = list2[-(index-star)-1]
+                index += 1
+                
+print list1
+ans = 0
+power = 0
+for elem in range(1, len(list1)+1):
+    ans += list1[len(list1)-elem] * pow(10, power)
+    power += 1
 
 
-#build up the BST
-class Node(object):
-  def __init__(self, data, parent = None, left=None, right=None):
-    self.data = data
-    self.parent = parent    
-    self.left = left
-    self.right = right
-    
-    
-  def insert(self, data):
-    #check the root data first
-    if self.data:
-      #check the right hand side
-      if(self.data > data):
-        if self.left is None:
-          self.left = Node(data, self)
-        else:
-          self.left.insert(data)
-      elif(self.data < data):
-        if self.right is None:
-          self.right = Node(data, self)
-        else:
-          self.right.insert(data)
-    else:
-      self.data = data
-        
-#building the BST
-root = Node(42, None)
-root.insert(45)
-root.insert(25)
-root.insert(12)
-root.insert(37)
-root.insert(9)
-root.insert(13)
-root.insert(40)
+print ans
 
-#testing
-#print root.left.left.parent.parent.right.data
-
-#inorder print left, root, right
-def printn(root):
-  if root == None:
-    return
-  printn(root.left)
-  print root.data
-  printn(root.right)
-
-
-
-#Find the depth of Binary Tree for defining the length of array
-def depth_tree(root):
-  if root == None:
-    return 0
-  else:
-    return 1 + max(depth_tree(root.right), depth_tree(root.left))
-  
-path = [0]*depth_tree(root)
-
-#bounded by level, do not sum previous stack data
-def printlist(value, path, level):
-  #print path
-  sum_all = 0
-  #print "string: " + str(level)
-  length = level
-  while 0 <= level:
-    sum_all += path[level]
-    #print sum_all, value
-    if sum_all == value:
-      #print the value from top to bottom
-      i = level
-      while i <= length:
-        #print i
-        print path[i]
-        i += 1
-      break
-    level -= 1
-    
-    
-#Find the paths in the BT and the sum of the path is equal to a constant value
-#using the stack, it always First come last out
-
-def sum_find(value, root, path, level):
-  if root == None:
-    return
-  #storing the value from 0(top) to 4(bottom)
-  path[level] = root.data
-  
-  #check the sum of path, from bottom to top
-  printlist(value, path, level)
-  
-  sum_find(value, root.left, path, level+1)
-  sum_find(value, root.right, path, level+1)
-
-
-
-
-sum_find(79, root, path, 0)

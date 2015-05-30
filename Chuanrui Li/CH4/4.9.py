@@ -96,5 +96,3 @@ def sum_find(value, root, path, level):
 
 
 
-
-sum_find(79, root, path, 0)
