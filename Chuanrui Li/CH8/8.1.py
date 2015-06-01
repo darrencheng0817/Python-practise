@@ -54,6 +54,12 @@ player1.get_card(C6)
 player1.get_card(C6)
 player1.get_card(C6)
 
+player2.get_card(C4)
+player2.get_card(C4)
+player2.get_card(C5)
+player2.get_card(C4)
+
+
 
 
 
