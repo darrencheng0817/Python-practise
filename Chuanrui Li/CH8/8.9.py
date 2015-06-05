@@ -16,6 +16,7 @@
 
 #how delete works ????????????
 class Entry:
+    cat  = 1
     def __init__ (self, parent, name):
         self.__parent = parent
         self.__name = name
@@ -47,7 +48,7 @@ class file(Entry):
         Entry.__init__(self, parent, name)
         self.size = size
         self.content = content
-   
+    
 
 class direc(Entry):
     def __init__(self, parent, name, size):
@@ -80,7 +81,7 @@ def main():
     f2 = file(f1, "f2", 3, "he2")
     f3 = file(f2,"f3", 4, "he3")
     print f3.get_full_path()
-    
+    print f3.cat
     #testing part 2
     d1 = direc(None, "d1", 1)
     d2 = direc(d1, "d2", 1)

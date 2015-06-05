@@ -21,8 +21,18 @@ def path(a, b):
         return 0
     else:
         return path(a, b-1) + path(a-1, b)
-    
+
+
+#if the n = 2, it will go through (1,1) (1,0) (1, -1) ---> false (0, 0), then try a-1
+#  get_path(a, b-1, list1) or get_path(a-1, b, list1):
+
+#this one does not execute parallel, it actually in sequence
+#get_path(a, b-1, list1) 
+#get_path(a-1, b, list1):
+
+#this can only get one path 
 def get_path(a, b, list1):
+    #print a, b
     if a == 0 and b == 0:
         list1.extend([(a,b)])
         return True
@@ -33,14 +43,34 @@ def get_path(a, b, list1):
         return True
     return False
 
+#print all the possible paths
+def full_paths(a, b, list2):
+    list2 = list2 + [(a, b)]
+    if a == 0 and b == 0:
+    	print list2
+        return 
+    if a < 0 or b < 0:
+        return 
+    else: 
+    	full_paths(a, b-1, list2) 
+    	full_paths(a-1, b, list2)
+        
+        
+
+
+
 def main():
-    A = 1
-    B = 1
-    print path(A, B)
+    A = 2
+    B = 2
+    #print path(A, B)
     
     list1 = []
     get_path(A, B, list1)
-    print list1
+    #print list1
+    
+    list2 = []
+    full_paths(A, B, list2)
+    
 
 if __name__ == "__main__":
     main()
