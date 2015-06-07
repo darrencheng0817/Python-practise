@@ -1,38 +1,51 @@
-#Write a method that returns all subsets of a set.
-#for set(0) --> []
-#for set(1) -->  []+ [1] = [[], [1]]
-#for set(2) -->  [[], [1]] + [2], [1, 2]= [[], [1], [2], [1, 2]]
-from copy import deepcopy
-result = [[]]
+# Given an infinite number of quarters (25 cents), dimes (10 cents), nickets(5 cents)
+# and pennis(1 cents),
+# Write code to calculate the number of ways of representing n cents?
 
-def subset(list1):
-	global result
-	step = []
-	
-	for i in range(0, len(list1)):
-		#print "-------------"
-		step = deepcopy(result)
-		#this is the new value
-		for j in result:
-			j.extend([list1[i]])
-		
-		#the older value for the last level
-		#using a trick, adding a empty list
-		result = step[:] + result
-	        #print result
-		step = []
-		i -= 1
+number = 0
+
+def ways(n, list1):
+  print n
+  global number
+  if n < 0:
+    return
+  elif n == 0:
+    i = 0
+    increment = True
+    while i+1 < len(list1):
+      if list1[i+1] < list1[i]:
+        increment = False
+      i += 1
+    if increment == True:  
+      print list1
+      number += 1
+  else:
+    ways(n-25, list1 + [25])
+    ways(n-10, list1 + [10])
+    ways(n-5, list1 + [5])
+    ways(n-1, list1+ [1])
+
 
 def main():
-	list1 = [1, 2, 3]
-  	subset(list1)
-  	print "/////////////////-----answer:"
-  	print result
+  global number
+  #n is 10 cents
+  n = 10
+  curr = 25
+  next = 25
+  list1= []
+  #counter 
+  ways(n,list1)
+  print "_____"
+  print number
 
-    
+  
+  
 
 if __name__ == "__main__":
-	main()
+    main()
+
+
+
 
 
 
