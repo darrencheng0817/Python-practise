@@ -10,3 +10,4 @@
 
 11.6 -> improve: 1, can track index and report 
      -> 2, not sure 6*6 or bigger matrix
+11.7-> can do better using merge or quick sort, even counting sort
