@@ -1,13 +1,17 @@
-#If you have a 2 GB file with one string per line,
-#which sorting algorithm would you use to sort the file and why?
+#How would you load test a webpage without using any test tools?
 
 
-Step1, divide files into 20 small files and 1 GB for each file and bring them seperated into the memory
-Step2, using radix sort for each small files
-Step3, merge 1 by 1 for all the files
+# To perform load testing, we must first identify the performance-critical scenarios and the metrics which fulfill our performance objectives. Typical criteria include:
+# » response time
+# » throughput -> # of jobs can be done per unit time
+# » resource utilization
+# » maximum load that the system can bear.
 
+-> simulate concurrent users by creating thousands of virtual users. This also can test the 
+operating capacity
 
-
+-> for each user, we would programmatically measure response time, data I/O, etc.
+In C, there is time function. Record the sending data time and receiving data time
 
 
 
