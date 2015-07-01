@@ -1,110 +1,29 @@
-#Given an integer between 0 and 999,999, 
-#print an English phrase that describes the integer (eg, “One Thousand, Two Hundred and Thirty Four”).
-
-# EX: 999,999 --->
-# nine hundred ninety-nine thousand, 
-# nine hundred ninety-nine 
-#1), break down the words and do it into different cases -> for 999,000 it just a
-
-def words(num, position, list1):
-	#This is for the first position 
-	result = 0
-	if (position == 1 and list1[len(list1)-2] != 1) or position == 3:
-		if num == 1:
-			result = "one"
-		elif num == 2:
-			result = "two"
-		elif num == 3:
-			result = "three"
-		elif num == 4:
-			result = "four"
-		elif num == 5:
-			result = "five"
-		elif num == 6:
-			result = "six"
-		elif num == 7:
-			result = "seven"
-		elif num == 8:
-			result = "eight"
-		elif num == 9:
-			result = "nine"
-		else:
-			result = "none"
-		#This is for the third position 
-		if position == 3:
-			result += " hundred and "
-		return result
-
-	#This is for the second position 		
-	if position == 2:
-		if num == 1:
-			if list1[-1] == 0:
-				result = "ten"
-			elif list1[-1] == 1:
-				result = "Eleven"
-			elif list1[-1] == 2:
-				result = "Twelve"
-			elif list1[-1] == 3:
-				result = "Thirteen"
-			elif list1[-1] == 4:
-				result = "Fourteen"
-			elif list1[-1] == 5:
-				result = "Fifteen"
-			elif list1[-1] == 6:
-				result = "Sixteen"
-			elif list1[-1] == 7:
-				result = "Seventeen"
-			elif list1[-1] == 8:
-				result = "Eighty"
-			elif list1[-1] == 9:
-				result = "Nineteen"			
-			
-		elif num == 2:
-			result = "Twenty"
-		elif num == 3:
-			result = "Thirty"
-		elif num == 4:
-			result = "Forty"
-		elif num == 5:
-			result = "Fifty"
-		elif num == 6:
-			result = "Sixty"
-		elif num == 7:
-			result = "Seventy"
-		elif num == 8:
-			result = "Eighty"
-		elif num == 9:
-			result = "Ninety"
-		else:
-			result = "none"
-		#have a digit on "0" position
-		if list1[-1] != 0 and num != 1 and num != 0:
-			result += "-"
-		return result
+# Since XML is very verbose, you are given a way of encoding it where each tag gets mapped to a pre-defined integer value. The language/grammar is as follows:
+# Element --> Element Attr* END Element END [aka, encode the element tag, then its attributes, then tack on an END character, then encode its children, then another end tag]
+# Attr --> Tag Value [assume all values are strings] END --> 01
+# Tag --> some predefined mapping to int
+# Value --> string value END
+# Write code to print the encoded version of an xml element (passed in as string).
+# FOLLOW UP
+# Is there anything else you could do to (in many cases) compress this even further?
 
 
+from xml.dom import minidom
 
-def parser(list1):
-	print list1
-	result = ""
-	position = len(list1)
-	for i in list1:
-		hehe = words(i, position, list1)
-		if hehe != "none":
-			result += hehe
-		position -= 1
-	print result  
+hash_map = {"family": 1, "person": 2, "firstname": 3, "lastname": 4, "state": 5}
+
+xmldoc = minidom.parse('17.10.xml')
+root = xmldoc.getroot()
+print root.find('family')
+#for neighbor in root:
+  #print neighbor.attrib
+  
+#itemlist = xmldoc.getElementsByTagName('family')
 
 
-def main():
-	#Input is only three digits
-	num = 888
-	list1 = [int(i) for i in str(num)]
-	parser(list1)
-	
-
-if __name__ == "__main__":
-	main()
-
+# print(len(itemlist))
+# print(itemlist[0].attributes['name'].value)
+#for s in itemlist:
+    #print(s.attributes['name'].value)
 
 
