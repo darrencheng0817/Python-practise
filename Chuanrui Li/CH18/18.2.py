@@ -1,45 +1,21 @@
-#Design an algorithm to figure out if someone has won in a game of tic-tac-toe. 
-#Normally for tic-tac-toe, we have a 3*3 board
+#Write a method to shuffle a deck of cards. 
+#It must be a perfect shuffle - in other words, each 52! permutations of the deck has to be equally likely. 
+#Assume that you are given a random number generator which is perfect.
 
 
-#easy approach: check 8 lines, 3 vertical, 3 horizontal, 2 daigonal 
+#solution: first we need to make sure n-1 is shuffled, then we swap the nth element with one of the n-1 elements
+#We can solve this by iteration
 
-#hard approach: 
-#1), using the hash map to preload all the info -> all the cases -> who wins
-#2), then calculate the map value and then try to match the hash code
+import random
 
 def main():
-	#"empty" is 0, "o" is 1, "x" is 2. ----> 
-	# 111
-	# 111000
-	# 111000000
-
-	# 222
-	# 222000
-	# 222000000
-
-	# 100010001
-	# 001010100
-
-	# 200020002
-	# 002020200
-
-	hash_map = {111: "o wins", 111000: "o wins", 111000000: "o wins", 100010001: "o wins", 1010100: "o wins", 222: "x wins", 222000: "x wins", 222000000: "x wins", 200020002: "x wins", 2020200: "x wins"}
-
-	key = 0
-	factor = 0
-	board = [1,0,0,0,1,0,0,0,1]
-
-	#reverse counting
-	for i in range(0, len(board)):
-		key += board[i]*pow(10, factor)
-		factor += 1
-
-	print key
-	if key in hash_map:
-		print hash_map[key]
-	else:
-		print "no result"
+	array = [1, 2, 3, 4, 5]
+	for index in range(0, len(array)):
+		Nindex = random.randrange(0, index+1)
+		temp = array[Nindex]
+		array[Nindex] = array[index]
+		array[index] = temp
+	print array	
   
 
 if __name__ == "__main__":
