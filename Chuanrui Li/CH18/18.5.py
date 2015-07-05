@@ -1,42 +1,37 @@
-# The Game of Master Mind is played as follows:
-# The computer has four slots containing balls that are red (R), yellow (Y), green (G) or blue (B). For example, the computer might have RGGB (e.g., Slot #1 is red, Slots #2 and #3 are green, Slot #4 is blue).
-# You, the user, are trying to guess the solution. You might, for example, guess YRGB.
-# When you guess the correct color for the correct slot, you get a “hit”. If you guess a color that exists but is in the wrong slot, you get a “pseudo-hit”. For example, the guess YRGB has 2 hits and one pseudo hit.
-# For each guess, you are told the number of hits and pseudo-hits.
-# Write a method that, given a guess and a solution, returns the number of hits and pseudo hits.
+# You have a large text file containing words. 
+# Given any two words, find the shortest distance (in terms of number of words) between them in the file. 
+# Can you make the searching operation in O(1) time? 
+# What about the space complexity for your solution?
 
-#example:
-#RGGB -> YRGB: 2 hits, 1 pseudo hit
-#RGBY -> GGRR: 1 hits, 1 pseudo hit
 
-def checker(t1, g1):
-  counter = 0
-  list1 = []
-  list2 = []
-  #hits
-  for i, j in zip(range(0, len(t1)), range(0, len(g1))):
-    if t1[i] == g1[j]: 
-      counter+=1
-    else:
-      list1 = list1 + [t1[i]]
-      list2 = list2 + [g1[j]]
-  print counter
-  print list1, list2
-  
-  #pseudo hits
-  counter2 = 0 
-  for k in list1:
-    if k in list2:
-      counter2 += 1
-  print counter2
-    
+#This problem can also be solved by hash table (key, location) ("hehe", [1, 2])
+#but it requires more space, but more efficient
+def minDistance(word1Pos, word2Pos, testFile):
+  minD = len(testFile)
+  Rword1 = "hehe"
+  Rword2 = "jiji"
+  for i in range(0, len(testFile)):
+    if testFile[i] == Rword1:
+      distance = abs(i - word2Pos)
+      word1Pos = i
+      if distance < minD:
+        minD = distance
+
+    elif testFile[i] == Rword2:
+      distance = abs(word1Pos - i)
+      word2Pos = i
+      if distance < minD:
+        minD = distance
+
+  print minD
   
   
   
 def main():
-  targeted = "RGBY"
-  guess = "GGRR" #---> input
-  checker(targeted, guess)
+  testFile = ["hehe", "xixi", "yaya", "haha","jiji", "wuwu","hehe"]
+  word1Pos = len(testFile)
+  word2Pos = len(testFile)
+  minDistance(word1Pos, word2Pos, testFile)
 
 if __name__ == "__main__":
   main()
