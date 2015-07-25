@@ -158,6 +158,244 @@ s.rstrip()
 s.strip()
 #ans: 'I love coding'
 
+#String iteration
+for char in s:
+	print(char)
+
+#find the same letter in the string
+nString = ""
+s = 'I love coding'
+
+for char in s:
+	if char in 'abcd':
+		nString = nString + char 
+
+
+#while loop
+s = 'I love coding'
+nString = ""
+index = 0
+while index < len(s):
+	if s[index] in 'abcd':
+		nString = nString + s[index]
+	index += 1
+
+
+
+#list slice rule
+grades = [10, 20, 40]
+
+grades[0]
+#ans: 10
+
+grades[0:2]
+#ans: [10, 20]
+#--> the exclude the last element in the list
+
+#built in functions
+max(grades)
+min(grades)
+sum(grades)
+
+
+#methods for the list
+list.append(object)
+list.extend(list)
+list.pop()
+#remove and return the item at the end of the list
+
+list.remove(object)
+#remove the first occurrence of the object, error it not there
+
+list.reverse()
+list.sort()
+#sort the list from smallest to larges
+
+list.insert(int, object)
+#insert oject at the given index, moving items to make soon
+
+
+#the methods do not change the list
+list.count(object)
+list.index(object)
+#return the index of the first occurrence of object
+
+
+#example
+colours = ['blue', 'yellow']
+if colours.count('blue') > 0:
+	colours.remove('blue')
+#this way prevent the errors happens
+
+
+if 'blank' in colours:
+	where = colours.index('hot pink')
+	colours.pop(where)
+#delete the 'hot pink' in the list 
+
+
+
+#list is mutable, so the data can be changed
+list1[1] = 'hehe'
+#mutable: list
+#immutable: int, float, str, bool
+
+
+
+#range in the list
+#range(start, stop, step)
+
+#example: get the odd index
+s = "I love coding"
+for i in range(1, len(s), 2):
+	print i
+
+#example, check the continuous elements in the list
+s = "abccdeffggh"
+repeats = 0
+#the ending point is len(s) -1, which satisfied the s[i] == s[i+1]
+for i in range(len(s)-1):
+	if s[i] == s[i+1]:
+		repeats = repeats + 1
+
+
+#example for left rotating the element by 1 
+s = "abccdeffggh"
+first_item = s[0]
+for i in range(1, len(s)):
+	s[i-1] = s[i]
+
+s[-1] = first_item 
+
+
+#example of the nested for loop
+average = []
+grades = [[70, 80],[90, 100]]
+for grades_list in grades:
+	total = 0
+	for mark in grades_list:
+		total = total + mark
+
+	average.append(total/len(grades_list))
+
+
+#read line by line from the file
+#python 2 needs to import the functions	
+from __future__ import print_function
+
+
+#python 3 do not need to import the function
+directory = "/Users/lichuanr/Desktop/Python-practise/Chuanrui Li/CH13/sample.txt"
+file2 = open(directory, 'r')
+line = file2.readline()
+
+print (line, end = '')
+while line != '':
+    line = file.readline()
+    print (line, end = '')
+
+#read all the file at one time
+directory = "/Users/lichuanr/Desktop/Python-practise/Chuanrui Li/CH13/sample.txt"
+file1 = open(directory, 'r')
+print (file1.read())
+
+
+
+#read all the lines in the list
+lines = file1.readlines()
+for line in lines:
+	print(line, end='')
+
+
+
+#write content into the file
+directory = "/Users/lichuanr/Desktop/Python-practise/Chuanrui Li/CH13/sample.txt"
+file1 = open(directory, 'r')
+content = file1.read()
+
+
+
+new_dir = "/Users/lichuanr/Desktop/Python-practise/Chuanrui Li/CH13/sample1.txt"
+to_file = open(new_dir, 'w')
+to_file.write('Copy\n')
+to_file.write(content)
+to_file.close()
+
+    
+
+#tuple -> immutable list
+tup = ('a', 1, -0.2)
+
+tup[0] ='b'
+#error, since tuple is immutable
+
+tup[0]
+#ans: 'a'
+tup[:2]
+#ans: ('a', 1)
+
+#one element tuples
+(1,)
+
+
+
+#Dictionary --> mutable
+
+#definition -> key, value pair
+average_grade = {'A1': 80, 'A2': 90, 'A3': 70}
+
+#check the value for the key
+average_grade['A1']
+#ans: 80
+
+#check the key exist or not
+'A4' in average_grade
+#ans: False
+#adding key value pair
+average_grade['A4'] = 85
+len(average_grade)
+#ans: 4
+
+#iterate each key in the dictionary
+for assignment in average_grade:
+	print assignment, average_grade[assignment]
+
+#ans:
+# A1 80
+# A2 90
+# A3 70
+
+#The key of dictionary is immutable
+d = {'apple': 2, 5: 8}
+d[[1, 2]] = 'banana' #error
+
+d[(1, 2)] = 'banana' #right
+d = {'apple': 2, 5: 8, (1, 2):'banana'}
+
+
+
+#example of using dictionary
+fruit_to_color= {
+	'banana': 'yellow',
+	'cherry': 'red',
+	'orange': 'orange',
+	'peach':'orange'}
+
+color_to_fruit = {}
+for fruit in fruit_to_color:
+	color = fruit_to_color[fruit]
+
+	if not (color in color_to_fruit):
+		color_to_fruit[color] = [fruit]
+	#otherwise, append fruit to the existing list
+	else:
+		color_to_fruit[color].append(fruit)
+
+#ans
+color_to_fruit = {
+	'yellow': 'banana',
+	'red': 'cherry',
+	'orange': ['orange', 'peach']}
 
 
 
