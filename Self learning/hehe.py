@@ -399,4 +399,44 @@ color_to_fruit = {
 
 
 
+###############################################################
+
+#The second part of the python programming 
+
+#palindrome
+def reverse():
+	s = 'hehi'
+	rev = ' '
+	for ch in s:
+		rev = ch + rev
+	return rev
+
+def reverse1():
+	s1 = 'hahi'
+	#the half of the string is equal
+	half = reverse(s[len(s1)//2:])
+	if s1[:len(s1)//2] == half:
+		return "yes"
+	else:
+		return "no"
+
+def reverse2():
+	s1 = "hahahi"
+	i = 0
+	j = len(s1)
+	for i < j:
+		if s1[i] != s1[j]:
+			return "no"
+
+	return "yes" 
+
+
+
+
+
+
+
+
+
+
 
