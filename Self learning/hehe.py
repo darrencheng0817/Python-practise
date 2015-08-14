@@ -1,3 +1,6 @@
+#checkout the Yelp design method for solving the problem
+
+
 max(1, 2, 3)
 
 abs(-23.23)
@@ -400,7 +403,6 @@ color_to_fruit = {
 
 
 ###############################################################
-
 #The second part of the python programming 
 
 #palindrome
@@ -427,10 +429,74 @@ def reverse2():
 	for i < j:
 		if s1[i] != s1[j]:
 			return "no"
-
 	return "yes" 
 
 
+###############################################################
+#restaurant recommendation problems
+#-> understand the statment of problme
+#-> choose the data structure for problem 
+#-> think of the test case before doing the actual coding
+
+
+
+#Yelp review system
+
+#List of reviews
+#-> Queen St, Cafe , $, 82%, Malaysian, Thai
+#-> Dumplings R US, $, 71%, Chinese
+
+
+#using dictionary {str: int}
+name_of_rating = {'Dumplings R US': 71,'Queen St. Cafe': 82}
+
+price_to_names = {'$':['Dumplings R US', 'Queen St. Cafe']}
+
+type_to_name = {'Chinese':['Dumplings R US'], 'Malaysian, Thai':['Queen St, Cafe']}
+
+def find_restaurant(price, types):
+	list1 = [] #track the price
+	list2 = [] #track the type
+
+
+	list1 = price_to_names[price]
+
+	list2 = type_to_name[types]
+
+
+	for element in list1:
+		if element in list2:
+			print element
+
+
+#auto-testing methods for python
+import doctest
+doctest.testmod()
+
+ex:
+	#input: get_divisors(8, [1, 2, 3])
+	#output: [1, 2]
+	#the tester will compare the results and then gives the answer
+
+
+#### module import
+#if you wanna import code do not run part of the code 
+#using -> __name__ strategies
+
+part1.py
+print "xixi"
+
+if __name__ == '__main__':
+	print "haha"
+
+
+part2.py
+import part1
+
+#if running part2.py
+#the ans is 'xixi'
+
+--> creating your own types
 
 
 
