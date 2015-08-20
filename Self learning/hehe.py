@@ -470,8 +470,10 @@ def find_restaurant(price, types):
 
 
 #auto-testing methods for python
+#python united test framework
 import doctest
 doctest.testmod()
+
 
 ex:
 	#input: get_divisors(8, [1, 2, 3])
@@ -496,7 +498,138 @@ import part1
 #if running part2.py
 #the ans is 'xixi'
 
---> creating your own types
+#Looking for an element in the list
+#- linear search 
+#- binary search
+
+#The index of the list -> print the first value of the index
+L = ['a', 'b', 'c', 'a', 'd']
+L.index('a')
+#print 0
+L.index('c')
+#print 2
+L.index('d')
+#print 4
+
+#bubble sort
+#7, 3, 5, 2
+
+l = [7, 3, 5, 2]
+
+def hehe():
+	global l
+	end = len(l)-1
+	while end != 0:
+		length = end
+		for index2 in range(0, length):
+			if l[index2] > l[index2+1]:
+				#swaping the digits
+				temp = l[index2]
+				l[index2] = l[index2+1]
+				l[index2+1] = temp
+				if index2 == length-1:
+					break
+		end -= 1
+				
+				
+hehe()
+print l
+
+
+#selection sort
+l = [7, 3, 5, 2]
+
+def haha():
+	global l
+	#i is outer loop, index is inner loop
+	i = 0
+	end = len(l) 
+	while i != end:
+		for index in range(i, end-1):
+			if l[i] > l[index+1]:
+				l[i], l[index+1] = l[index+1], l[i]
+
+		i+=1
+
+				
+				
+haha()
+print l
+
+
+
+#The insertion sort
+l = [7, 3, 5, 2]
+
+def haha():
+	global l
+	#i is outer loop, index is inner loop
+	i = 0
+	end = len(l)
+	while i < end:
+		index = i
+		while index > 0:
+			if l[index] < l[index - 1]:
+				l[index], l[index - 1] = l[index - 1], l[index]
+			index -= 1
+		i+=1
+
+				
+				
+haha()
+print l
+
+
+#python equal operator in the OOP
+
+class:
+	def __eq__(self, other):
+		return True
+
+if __name__ == '__main__':
+	print(cr1 == cr2)
+	#Ans: True
+
+
+# str -> help you to shape the object printing result
+class Foo:
+    def __str__(self):
+        return "bar"
+
+#main
+x = Foo()
+print x
+
+#ans: 'bar'
+
+
+#The print statement in python
+#print(value, sep=' ', end = '\n', file=sys.stdout)
+
+print(1, 2, 3)
+#the result -> 1 2 3
+
+print(1, 2, 3, sept = '..', end = '!')
+#the result -> 1..2..3!
+
+#python 
+#-> try expcetion example
+
+
+try:
+	1/0
+expcet ValueError:
+	print('Value error')
+expcet ZeroDivisionError:
+	print ('Divided by zero')
+
+#ANS: Divided by zero
+
+#-> using the assert check the preconditions are met
+
+
+
+
 
 
 
