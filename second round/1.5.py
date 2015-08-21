@@ -32,10 +32,8 @@ def check():
 	
 	#length
 	if len(list2[0]) != len(list2[1]) and len(list2[0]) != (len(list2[1]) + 1) and len(list2[0]) != (len(list2[1]) - 1):
-		print "die"
 		return False
 	elif len(list2[0]) == (len(list2[1]) + 1):
-		print "haha"
 		#case1, missing 
 		counter = 0
 		i = j = 0
@@ -52,7 +50,6 @@ def check():
 		print "win"
 		return True
 	elif len(list2[0]) == (len(list2[1]) - 1):
-		print "xixi"	
 		#case1, missing 
 		counter = 0
 		i = j = 0
@@ -68,8 +65,7 @@ def check():
 					return False
 		print "win"
 		return True
-	elif len(list2[0]) == len(list2[1]):
-		print "lele"	
+	elif len(list2[0]) == len(list2[1]):	
 		#case1, missing 
 		counter = 0
 		i = j = 0
