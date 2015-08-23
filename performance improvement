@@ -6,7 +6,6 @@
 4.1 -> better design(performance) -> height never check back
 4.2 -> using nodes and set color for each node, DFS -> for graph
 4.3 -> why it does not work, copy the standard and search
-4.7 -> bottom up methods
 
 11.6 -> improve: 1, can track index and report 
      -> 2, not sure 6*6 or bigger matrix
