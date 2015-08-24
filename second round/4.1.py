@@ -1,5 +1,5 @@
 #BFS
-#This is a directed map
+#This is a undirected map
 graph = {'A': ['B', 'E'], 'B': ['A', 'C'], 'C': ['B', 'D'], 'D': ['E', 'C'], 'E': ['A', 'D']}
 visited1 = set()
 visited2 = set()
