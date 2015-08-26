@@ -43,7 +43,8 @@ roots.insert(13)
 
 roots1 = Node(13, None)
 
-
+t1 = Node(1, Node(2, Node(4, Node(4), Node(5)), Node(5, Node(4), Node(5))), Node(3, Node(1, Node(4), Node(5)), Node(3, Node(4), Node(5))))
+t2 = Node(5, Node(4), Node(5))
 
 
 #testing
@@ -88,7 +89,7 @@ def checker(T1, T2):
   else:
     return checker(T1.left, T2) or checker(T1.right, T2)
     
-print checker(root, roots)
+print checker(t1, t2)
 
 
 
