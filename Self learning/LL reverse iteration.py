@@ -48,6 +48,48 @@ def recursion(node):
 #pre = reverse1(root)
 #pre.printN()
 #print "----"
-pre = recursion(root)
+#pre = recursion(root)
+#pre.printN()
+
+
+#-------------------- better solution to solve this problem, general logic is same
+
+#this code deal with special cases and general cases together
+def reverse3(head):
+	pre = None
+	while head != None:
+		#change linking
+		later = head.next
+		head.next = pre
+		#update -> head and later are in the same position before changing the links
+		pre = head
+		head = later
+		
+	return pre
+	
+#-------------------------
+#pre = reverse3(root)
+#pre.printN() 
+
+#recursion method
+#origin approach
+#-> (pre -> curr),(curr -> later),(later -> later.next)
+#improvement
+#-> (pre -> curr), (curr-> later)
+
+def reverse4(cur, pre):
+	while cur == None:
+		return pre
+	later = cur.next
+	cur.next = pre
+	return reverse4(later, cur)	
+	
+
+def recursion2(root):
+	return reverse4(root, None)
+
+#main -------------------------
+pre = recursion2(root)
 pre.printN()
+
 
