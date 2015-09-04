@@ -10,7 +10,7 @@
     <td>1</td>
     <td>Two Sum</td>
     <td></td>
-    <td>?</td>
+    <td>Ok</td>
   </tr>
   <tr>
     <td>2</td>
@@ -32,9 +32,9 @@
   </tr>
   <tr>
     <td>5</td>
-    <td></td> 
+    <td>Longest Palindromic Substring</td> 
     <td></td>
-    <td>**need improve**</td>
+    <td>bad, need improve</td>
   </tr>
   <tr>
     <td>6</td>
@@ -70,13 +70,13 @@
     <td>37</6td>
     <td>Count and Say</td> 
     <td></td>
-    <td>?</td>
+    <td>Ok</td>
   </tr>
   <tr>
     <td>146</6td>
     <td>LRU Cache</td> 
     <td></td>
-    <td>Yes, Need other approach</td>
+    <td>Ok, need other approach</td>
   </tr>
   <tr>
     <td>202</6td>
