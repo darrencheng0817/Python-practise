@@ -38,9 +38,9 @@
   </tr>
   <tr>
     <td>6</td>
-    <td></td> 
+    <td>ZigZag Conversion</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>7</td>
