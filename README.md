@@ -34,7 +34,7 @@
     <td>5</td>
     <td></td> 
     <td></td>
-    <td color="red">O(n^2) need improve</td>
+    <td>**need improve**</td>
   </tr>
   <tr>
     <td>6</td>
