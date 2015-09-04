@@ -34,7 +34,7 @@
     <td>5</td>
     <td>Longest Palindromic Substring</td> 
     <td></td>
-    <td>bad, need improve</td>
+    <td>Bad, need improve</td>
   </tr>
   <tr>
     <td>6</td>
