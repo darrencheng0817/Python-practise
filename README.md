@@ -61,10 +61,58 @@
     <td>Yes</td>
   </tr>
   <tr>
+    <td>10</td>
+    <td>Regular Expression Matching</td> 
+    <td></td>
+    <td>No</td>
+  </tr>
+  <tr>
     <td>11</td>
     <td>Container With Most Water</td> 
     <td></td>
     <td>Yes</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td></td> 
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>20</td>
