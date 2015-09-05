@@ -74,27 +74,27 @@
   </tr>
   <tr>
     <td>12</td>
-    <td></td> 
+    <td>Integer to Roman</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>13</td>
-    <td></td> 
+    <td>Roman to Integer</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>14</td>
-    <td></td> 
+    <td>Longest Common Prefix</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>15</td>
-    <td></td> 
+    <td>3Sum</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>16</td>
