@@ -44,15 +44,27 @@
   </tr>
   <tr>
     <td>7</td>
-    <td></td> 
+    <td>Reverse Integer</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>8</td>
-    <td></td> 
+    <td>String to Integer (atoi)</td> 
     <td></td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Palindrome Number</td> 
     <td></td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Container With Most Water</td> 
+    <td></td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td>20</td>
