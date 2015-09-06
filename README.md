@@ -116,10 +116,10 @@
   </tr>
   <tr>
     <td>16</td>
-    <td></td> 
+    <td>3Sum Closest </td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Trick, if find target, return immediately</td>
   </tr>
   <tr>
     <td>17</td>
