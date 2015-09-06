@@ -123,10 +123,10 @@
   </tr>
   <tr>
     <td>17</td>
-    <td></td> 
+    <td>Letter Combinations of a Phone Number </td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>IMPORTANT, Bracktracking method, need to redo it again</td>
   </tr>
   <tr>
     <td>18</td>
