@@ -140,7 +140,7 @@
     <td>Remove Nth Node From End of List</td> 
     <td></td>
     <td>Ok</td>
-    <td>My apporoach: 1, change the node, delete the last one. 2, inorder traverse(n = total - n). Other approach: Remove directly or using list as extra storage</td>
+    <td>My apporoach: 1, change the node, delete the last one. 2, inorder traverse(n = total - n). Other approach: Remove directly or using list as extra storage. TRY recursive later</td>
   </tr>
   <tr>
     <td>20</td>
