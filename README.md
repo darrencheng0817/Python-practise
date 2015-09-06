@@ -130,10 +130,10 @@
   </tr>
   <tr>
     <td>18</td>
-    <td></td> 
+    <td>4 Sum</td> 
     <td></td>
-    <td></td>
-    <td><a href="http://blog.csdn.net/linhuanmars/article/details/24826871" target="_blank">2, 3, 4 sum summary</a> Best approach is O(kn^2), k is the hashvalue average length</td>
+    <td>Yes</td>
+    <td><a href="http://blog.csdn.net/linhuanmars/article/details/24826871" target="_blank">2, 3, 4 sum summary</a> Best approach is O(kn^2), k is the hashvalue average length 哈嘻表</td>
   </tr>
   <tr>
     <td>19</td>
