@@ -7,100 +7,117 @@
     <th>Name</th>
     <th>source code</th>
     <th>Improved</th>
+    <th>Note</th>
   </tr>
   <tr>
     <td>1</td>
     <td>Two Sum</td>
     <td></td>
     <td>Ok</td>
+    <td></td>
   </tr>
   <tr>
     <td>2</td>
     <td>Add Two Numbers</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>3</td>
     <td>Longest Substring Without Repeating Characters</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>4</td>
     <td>Median of Two Sorted Arrays</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>5</td>
     <td>Longest Palindromic Substring</td> 
     <td></td>
-    <td>Bad, need improve</td>
+    <td>Bad</td>
+    <td>Need improve</td>
   </tr>
   <tr>
     <td>6</td>
     <td>ZigZag Conversion</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>7</td>
     <td>Reverse Integer</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>8</td>
     <td>String to Integer (atoi)</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>9</td>
     <td>Palindrome Number</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>10</td>
     <td>Regular Expression Matching</td> 
     <td></td>
     <td>No</td>
+    <td></td>
   </tr>
   <tr>
     <td>11</td>
     <td>Container With Most Water</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>12</td>
     <td>Integer to Roman</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>13</td>
     <td>Roman to Integer</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   <tr>
     <td>14</td>
     <td>Longest Common Prefix</td> 
     <td></td>
     <td>Yes</td>
+    <td>My approach, 1, compare two shorest string, 2, compare char by char</td>
   </tr>
   <tr>
     <td>15</td>
     <td>3Sum</td> 
     <td></td>
     <td>Yes</td>
+    <td>1, can use hashmap, too. 2, can choose set, 3, my approach, less space cost</td>
   </tr>
   <tr>
     <td>16</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -109,10 +126,12 @@
     <td></td> 
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>18</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -121,12 +140,14 @@
     <td></td> 
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>20</td>
     <td>Valid Parentheses</td> 
     <td></td>
     <td>Yes</td>
+    <td></td>
   </tr>
   </table>
   
