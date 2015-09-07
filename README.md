@@ -133,7 +133,7 @@
     <td>4 Sum</td> 
     <td></td>
     <td>Yes</td>
-    <td><a href="http://blog.csdn.net/linhuanmars/article/details/24826871" target="_blank">2, 3, 4 sum summary</a> Best approach is O(kn^2), k is the hashvalue average length 哈嘻表</td>
+    <td><a href="http://blog.csdn.net/linhuanmars/article/details/24826871" target="_blank">2, 3, 4 sum summary</a> Best approach is O(kn^2), k is the hashvalue average length 哈嘻表, LESSONS Learned, When using API like set.add(). be careful. It is very costly</td>
   </tr>
   <tr>
     <td>19</td>
@@ -158,64 +158,75 @@
     <th>Name</th>
     <th>source code</th>
     <th>Improved</th>
+    <th>Note</th>
   </tr>
   <tr>
-    <td>1</td>
+    <td>21</td>
+    <td>Merge Two Sorted Lists</td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>2</td>
+    <td>22</td>
+    <td>Generate Parentheses</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>23</td>
     <td></td> 
     <td></td>
     <td></td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td></td> 
-    <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>4</td>
-    <td></td> 
+    <td>24</td>
+    <td>Swap Nodes in Pairs</td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>5</td>
+    <td>25</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>6</td>
-    <td></td> 
+    <td>26</td>
+    <td>Remove Duplicates from Sorted Array</td> 
     <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td></td> 
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>8</td>
+    <td>27</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>9</td>
+    <td>28</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>10</td>
+    <td>29</td>
     <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -224,10 +235,12 @@
     <td></td> 
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>12</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -236,10 +249,12 @@
     <td></td> 
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>14</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -248,10 +263,12 @@
     <td></td> 
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>16</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -260,10 +277,12 @@
     <td></td> 
     <td></td>
     <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>18</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -276,6 +295,7 @@
   <tr>
     <td>20</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
