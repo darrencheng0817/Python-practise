@@ -164,8 +164,8 @@
     <td>21</td>
     <td>Merge Two Sorted Lists</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Note, not best performance need to improve</td>
   </tr>
   <tr>
     <td>22</td>
