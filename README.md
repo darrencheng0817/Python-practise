@@ -199,8 +199,8 @@
     <td>26</td>
     <td>Remove Duplicates from Sorted Array</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>The question itself does not state clear, Two points: 1, return length 2, new list with no-duplicate elements and it doesn't matter what you leave beyond the new length.</td>
   </tr>
   <tr>
     <td>27</td>
