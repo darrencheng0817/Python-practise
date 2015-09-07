@@ -171,8 +171,8 @@
     <td>22</td>
     <td>Generate Parentheses</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>poor performance, I used iteration, Can try recursion, I also have it in CC150</td>
   </tr>
   <tr>
     <td>23</td>
