@@ -204,10 +204,10 @@
   </tr>
   <tr>
     <td>27</td>
-    <td></td> 
+    <td>Remove Element</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Tips, be careful about changing and iterating the list at the same time</td>
   </tr>
   <tr>
     <td>28</td>
