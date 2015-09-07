@@ -211,9 +211,9 @@
   </tr>
   <tr>
     <td>28</td>
-    <td></td> 
+    <td>Implement strStr()</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
