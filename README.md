@@ -219,9 +219,9 @@
   </tr>
   <tr>
     <td>29</td>
-    <td></td> 
+    <td>Divide Two Integers</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
@@ -232,70 +232,70 @@
     <td></td>
   </tr>
   <tr>
-    <td>11</td>
+    <td>31</td>
+    <td>Next Permutation</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>32</td>
     <td></td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>12</td>
+    <td>33</td>
     <td></td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>13</td>
+    <td>34</td>
+    <td>Search for a Range</td> 
+    <td></td>
+    <td>Yes</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Search Insert Position</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Valid Sudoku</td> 
+    <td></td>
+    <td>Yes</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>37</td>
     <td></td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>14</td>
-    <td></td> 
+    <td>38</td>
+    <td>Count and Say</td> 
     <td></td>
+    <td>Yes</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Combination Sum</td> 
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>15</td>
-    <td></td> 
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>16</td>
-    <td></td> 
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>17</td>
-    <td></td> 
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>18</td>
-    <td></td> 
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>19</td>
-    <td></td> 
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>20</td>
-    <td></td> 
+    <td>40</td>
+    <td>Combination Sum II</td> 
     <td></td>
     <td></td>
     <td></td>
