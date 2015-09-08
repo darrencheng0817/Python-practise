@@ -187,7 +187,7 @@
     <td></td>
     <td>Yes</td>
     <td>It is not a hard problem, but it is very easy to make mistake. if seperate the reverse pair into two case:
-    1, the init case and other cases. The inital case is simple and do not need to think about the connections between other nodes</td>
+    1, the init case and other cases. The inital case is simple and do not need to think about the connections between previous nodes</td>
   </tr>
   <tr>
     <td>25</td>
