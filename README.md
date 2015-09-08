@@ -74,9 +74,9 @@
   </tr>
   <tr>
     <td>10</td>
-    <td>Regular Expression Matching</td> 
+    <td></td> 
     <td></td>
-    <td>No</td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
