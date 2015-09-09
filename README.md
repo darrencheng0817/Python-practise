@@ -219,10 +219,13 @@
   </tr>
   <tr>
     <td>29</td>
-    <td>Divide Two Integers</td> 
+    <td>Divide Two Integers</td>
     <td></td>
     <td>Yes</td>
-    <td></td>
+    <td>NNNEED to redo it. Some tricks. 1, two nested while loop, only decrease in the inner loop. 2, the difference between the <<= and <<: 
+    1, << shifts things, but if you don not assign the result to anything, nothing will be record.
+    ex: y = 8. y<<1 -> this gives you 16, but y will still be 8. But for <<=,  y = 8. y <<=1 -> y becomes 16
+    </td>
   </tr>
   <tr>
     <td>30</td>
