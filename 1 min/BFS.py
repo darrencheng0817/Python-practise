@@ -1,6 +1,6 @@
 #BFS
 #This is a directed map 
-graph = {'A': ['B', 'C'], 'B':['F'], 'C': ['D'], 'D': ['E'], 'E': ['F'], 'F':['A'] }
+graph = {'A': ['B', 'C'], 'B':['C', 'F'], 'C': ['D'], 'D': ['E'], 'E': ['F'], 'F':['A'] }
 visited1 = set()
 class Queue:
 	def __init__(self):

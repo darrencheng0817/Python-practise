@@ -1,6 +1,6 @@
 matrix = [
     [0,  0,    0,  -1,   0],
-    [0, -1,    0,  'B',  0],
+    [0, -1,    -1,  'B',  0],
     [0, -1,   -1,  -1,   0], 
     [0, 'A',  -1,   0,   0], 
     [0,  0,   -1,   0,   0], 
@@ -41,19 +41,19 @@ def bfs(matrix, a, b):
             visited.add(location)
             if is_valid(matrix, location[0]+1, location[1]) and (matrix[location[0]+1][location[1]] == 0 or matrix[location[0]+1][location[1]] == 'B'):
     		    list1.append((location[0]+1,location[1]))
-    			    #visited.add((location[0]+1,location[1]))
+                #visited.add((location[0]+1,location[1]))
     			    
     	    if is_valid(matrix, location[0], location[1]+1) and (matrix[location[0]][location[1]+1] == 0 or matrix[location[0]][location[1]+1] == 'B'):
     		    list1.append((location[0],location[1]+1))
-    			    #visited.add((location[0],location[1]+1))
+                #visited.add((location[0],location[1]+1))
     			    
     	    if is_valid(matrix, location[0]-1, location[1]) and (matrix[location[0]-1][location[1]] == 0 or matrix[location[0]-1][location[1]] == 'B'):
     		    list1.append((location[0]-1,location[1]))
-    			    #visited.add((location[0]-1,location[1]))
+                #visited.add((location[0]-1,location[1]))
     			    
     	    if is_valid(matrix, location[0], location[1]-1) and (matrix[location[0]][location[1]-1] == 0 or matrix[location[0]][location[1]-1] == 'B'):
     		    list1.append((location[0],location[1]-1))
-    			    #visited.add((location[0],location[1]-1))
+                #visited.add((location[0],location[1]-1))
              
     return None
             
