@@ -238,8 +238,8 @@
     <td>31</td>
     <td>Next Permutation</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td><a href="https://leetcode.com/discuss/17631/share-my-python-code-and-explain-how-to-get-the-solution" target="_blank">Detailed alg, 3 major steps, 1, find, 2, swapping, 3 sorting.</a>Trick, do not return, you need an in-place sorting alg</td>
   </tr>
   <tr>
     <td>32</td>
