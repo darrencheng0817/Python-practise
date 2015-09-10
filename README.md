@@ -260,7 +260,7 @@
     <td>Search for a Range</td> 
     <td></td>
     <td>Yes</td>
-    <td>Tips, if I wanna 6, I search for both 5.5 and 6.5, then find both lower and upper boundaries for both cases.</td>
+    <td>Tips, if I wanna 6, I search for both 5.5 and 6.5, then find both lower and upper boundaries for 6.</td>
   </tr>
   <tr>
     <td>35</td>
