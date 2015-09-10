@@ -266,8 +266,8 @@
     <td>35</td>
     <td>Search Insert Position</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Easy, maybe have some other cool way to solve it</td>
   </tr>
   <tr>
     <td>36</td>
