@@ -305,136 +305,307 @@
   </tr>
   </table>
   
-  <h4>31-60</h4>
+  <h4>41-60</h4>
   <table style="width:100%">
   <tr>
     <th>Index</th>
     <th>Name</th>
     <th>source code</th>
     <th>Improved</th>
+    <th>Notes</th>
   </tr>
   <tr>
-    <td>1</td>
+    <td>41</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>2</td>
+    <td>42</td>
     <td></td> 
     <td></td>
     <td></td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td></td> 
-    <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>4</td>
-    <td></td> 
+    <td>43</td>
+    <td>Multiply Strings</td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>5</td>
+    <td>44</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>6</td>
+    <td>45</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>7</td>
-    <td></td> 
+    <td>46</td>
+    <td>Permutations</td> 
     <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td></td> 
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>9</td>
-    <td></td> 
+    <td>47</td>
+    <td>Permutations II</td> 
     <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td></td> 
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>11</td>
-    <td></td> 
+    <td>48</td>
+    <td>Rotate Image</td> 
     <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td></td> 
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>13</td>
-    <td></td> 
+    <td>49</td>
+    <td>Group Anagrams</td> 
     <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td></td> 
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>15</td>
-    <td></td> 
+    <td>50</td>
+    <td>Pow(x, n)</td> 
     <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>16</td>
-    <td></td> 
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>17</td>
+    <td>51</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>18</td>
+    <td>52</td>
     <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>19</td>
-    <td></td> 
+    <td>53</td>
+    <td>Maximum Subarray</td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>20</td>
+    <td>54</td>
     <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td></td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
   </table>
   
+  <h4>61-80</h4>
+  <table style="width:100%">
+  <tr>
+    <th>Index</th>
+    <th>Name</th>
+    <th>source code</th>
+    <th>Improved</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  </table>
   <table style="width:100%">
   <tr>
     <th>Index</th>
