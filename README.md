@@ -294,14 +294,15 @@
     <td>39</td>
     <td>Combination Sum</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>First, sorted. Then, dfs:  index keep the same position for recursion</td>
   </tr>
   <tr>
     <td>40</td>
     <td>Combination Sum II</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Performance matters, the recursive call need to prevent the duplicate cases. First, increasing index, Second, the consecutive duplicated integer should be ignored. tracking the current value. GOOD LUCK</td>
   </tr>
   </table>
   
