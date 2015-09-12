@@ -375,8 +375,8 @@
     <td>49</td>
     <td>Group Anagrams</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>NEED huge improve, the normal way is not efficient. maybe string compression</td>
   </tr>
   <tr>
     <td>50</td>
