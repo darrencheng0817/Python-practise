@@ -361,8 +361,8 @@
     <td>47</td>
     <td>Permutations II</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Need to redo by iteration. Tricks, 1, similar to closet sum. avoid duplicate iteration. 2, using a list of bool to track the integer used or not. </td>
   </tr>
   <tr>
     <td>48</td>
