@@ -333,8 +333,8 @@
     <td>43</td>
     <td>Multiply Strings</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>May try some other methods, the API is pretty simple. Do not see the point adding char by char</td>
   </tr>
   <tr>
     <td>44</td>
