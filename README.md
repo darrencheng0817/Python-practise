@@ -354,8 +354,8 @@
     <td>46</td>
     <td>Permutations</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Permutations: 1, bracktrack question using recursion to solve, faster. 2, the increment normally used in the input, not seperate. the function will auto becoming append and pop. Not hard question overall</td>
   </tr>
   <tr>
     <td>47</td>
