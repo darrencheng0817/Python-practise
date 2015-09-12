@@ -368,8 +368,8 @@
     <td>48</td>
     <td>Rotate Image</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>for i in( 0, len/2) , then 1, first = i, 2, last = len - i - 1, inner for j in (first, last). Finally, offset = last -i. Neet to draw the matrix. It is not hard, but easy to make a tiny mistake</td>
   </tr>
   <tr>
     <td>49</td>
