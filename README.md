@@ -408,14 +408,14 @@
   </tr>
   <tr>
     <td>54</td>
-    <td></td> 
+    <td>Spiral Matrix</td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>55</td>
-    <td></td> 
+    <td>Jump Game</td> 
     <td></td>
     <td></td>
     <td></td>
@@ -436,21 +436,21 @@
   </tr>
   <tr>
     <td>58</td>
-    <td></td> 
+    <td>Length of Last Word</td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>59</td>
-    <td></td> 
+    <td>Spiral Matrix II</td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>60</td>
-    <td></td> 
+    <td>Permutation Sequence</td> 
     <td></td>
     <td></td>
     <td></td>
