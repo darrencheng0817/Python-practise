@@ -382,8 +382,8 @@
     <td>50</td>
     <td>Pow(x, n)</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>The odd or even power is different. Also, the positive and negative power is different</td>
   </tr>
   <tr>
     <td>51</td>
