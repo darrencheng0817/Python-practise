@@ -403,8 +403,8 @@
     <td>53</td>
     <td>Maximum Subarray</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Poor perfornamce, the DP method will be better, Need to redo later</td>
   </tr>
   <tr>
     <td>54</td>
