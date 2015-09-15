@@ -417,8 +417,8 @@
     <td>55</td>
     <td>Jump Game</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>COOL question, track the max every iteration, step increase, max-1. O(n) method can be found</td>
   </tr>
   <tr>
     <td>56</td>
