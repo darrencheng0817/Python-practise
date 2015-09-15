@@ -410,8 +410,8 @@
     <td>54</td>
     <td>Spiral Matrix</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Trick for 2d Matrix, 1, the matrix: [[]]: len(matrix) == 1 2, the matrix: []: len(matrix) == 0. So we need to check both of cases, before we do the pop operation</td>
   </tr>
   <tr>
     <td>55</td>
