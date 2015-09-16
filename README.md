@@ -438,15 +438,15 @@
     <td>58</td>
     <td>Length of Last Word</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Nothing hard</td>
   </tr>
   <tr>
     <td>59</td>
     <td>Spiral Matrix II</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>The odd and even cases need to be careful, the logic is similar to array rotating 90 degree</td>
   </tr>
   <tr>
     <td>60</td>
