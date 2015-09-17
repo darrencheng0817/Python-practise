@@ -512,8 +512,8 @@
     <td>67</td>
     <td>Add Binary</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Ok</td>
+    <td>Need an improvement</td>
   </tr>
   <tr>
     <td>68</td>
