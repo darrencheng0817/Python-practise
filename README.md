@@ -491,8 +491,8 @@
     <td>64</td>
     <td>Minimum Path Sum</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Need an improvement</td>
   </tr>
   <tr>
     <td>65</td>
