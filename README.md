@@ -484,8 +484,8 @@
     <td>63</td>
     <td>Unique Paths II</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Similar method as Question 62. Set 1 to None</td>
   </tr>
   <tr>
     <td>64</td>
