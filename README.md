@@ -418,7 +418,7 @@
     <td>Jump Game</td> 
     <td></td>
     <td>Yes</td>
-    <td>COOL question, track the max every iteration, step increase, max-1. O(n) method can be found</td>
+    <td>First, I disagree this question uses greedy alg, it is not taking the sub-optimal solution for every step. COOL question, track the max every iteration, step increase, max-1. O(n) method can be found</td>
   </tr>
   <tr>
     <td>56</td>
@@ -451,6 +451,157 @@
   <tr>
     <td>60</td>
     <td>Permutation Sequence</td> 
+    <td></td>
+    <td>Yes</td>
+    <td>EX: [1, 2, 3, 4], we will have 6! permutation first digit is "1". The next iteration: factorial number: f2 = 6!/i, i = 3. => f2 = 2!</td>
+  </tr>
+  </table>
+  
+  <h4>61-80</h4>
+  <table style="width:100%">
+  <tr>
+    <th>Index</th>
+    <th>Name</th>
+    <th>source code</th>
+    <th>Improved</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Rotate List</td>
+    <td></td>
+    <td>Yes</td>
+    <td>The rotation k can be larger than len(list). First, k = k % len(list)</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Unique Paths</td> 
+    <td></td>
+    <td>Yes</td>
+    <td>Dp program, using the bottom-up approach to save the result for the subproblems. However, the trick is the initialize the matrix at the beginning</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Unique Paths II</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>Minimum Path Sum</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Plus One</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Add Binary</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Sqrt(x)</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Climbing Stairs</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td></td> 
     <td></td>
     <td></td>
     <td></td>
