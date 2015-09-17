@@ -538,7 +538,7 @@
   </tr>
   <tr>
     <td>71</td>
-    <td></td> 
+    <td>Simplify Path</td> 
     <td></td>
     <td></td>
     <td></td>
@@ -552,21 +552,21 @@
   </tr>
   <tr>
     <td>73</td>
-    <td></td> 
+    <td>Set Matrix Zeroes</td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>74</td>
-    <td></td> 
+    <td>Search a 2D Matrix</td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>75</td>
-    <td></td> 
+    <td>Sort Colors</td> 
     <td></td>
     <td></td>
     <td></td>
@@ -580,28 +580,28 @@
   </tr>
   <tr>
     <td>77</td>
-    <td></td> 
+    <td>Combinations</td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>78</td>
-    <td></td> 
+    <td>Subsets</td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>79</td>
-    <td></td> 
+    <td>Word Search</td> 
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>80</td>
-    <td></td> 
+    <td>Remove Duplicates from Sorted Array II</td> 
     <td></td>
     <td></td>
     <td></td>
