@@ -505,8 +505,8 @@
     <td>66</td>
     <td>Plus One</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Ok</td>
+    <td>May be need some other approach, nothing hard</td>
   </tr>
   <tr>
     <td>67</td>
