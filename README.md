@@ -526,21 +526,21 @@
     <td>69</td>
     <td>Sqrt(x)</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
     <td>70</td>
     <td>Climbing Stairs</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
     <td>71</td>
     <td>Simplify Path</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
@@ -554,14 +554,14 @@
     <td>73</td>
     <td>Set Matrix Zeroes</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
     <td>74</td>
     <td>Search a 2D Matrix</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
