@@ -603,6 +603,157 @@
     <td>80</td>
     <td>Remove Duplicates from Sorted Array II</td> 
     <td></td>
+    <td>Yes</td>
+    <td></td>
+  </tr>
+  </table>
+  
+  <h4>80-100</h4>
+  <table style="width:100%">
+  <tr>
+    <th>Index</th>
+    <th>Name</th>
+    <th>source code</th>
+    <th>Improved</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Search in Rotated Sorted Array II</td>
+    <td></td>
+    <td>Yes</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Remove Duplicates from Sorted List II</td> 
+    <td></td>
+    <td>Yes</td>
+    <td>Trick, dummyhead, return dummyhead.next</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Remove Duplicates from Sorted List</td> 
+    <td></td>
+    <td>Yes</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Partition List</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>Merge Sorted Array	</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Gray Code</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Subsets II</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Decode Ways</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>Reverse Linked List II</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>Restore IP Addresses</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>Binary Tree Inorder Traversal</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Unique Binary Search Trees II</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>Unique Binary Search Trees</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Validate Binary Search Tree</td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Same Tree</td> 
+    <td></td>
     <td></td>
     <td></td>
   </tr>
@@ -758,6 +909,7 @@
     <td></td>
   </tr>
   </table>
+  
   <table style="width:100%">
   <tr>
     <th>Index</th>
