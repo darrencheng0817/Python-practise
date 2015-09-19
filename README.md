@@ -568,7 +568,7 @@
     <td>75</td>
     <td>Sort Colors</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
@@ -582,14 +582,14 @@
     <td>77</td>
     <td>Combinations</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
     <td>78</td>
     <td>Subsets</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
