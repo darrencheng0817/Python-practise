@@ -684,7 +684,7 @@
     <td>90</td>
     <td>Subsets II</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
