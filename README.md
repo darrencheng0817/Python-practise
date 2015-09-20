@@ -596,7 +596,7 @@
     <td>79</td>
     <td>Word Search</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
