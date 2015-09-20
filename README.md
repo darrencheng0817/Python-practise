@@ -656,7 +656,7 @@
     <td>86</td>
     <td>Partition List</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
@@ -670,14 +670,14 @@
     <td>88</td>
     <td>Merge Sorted Array	</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
     <td>89</td>
     <td>Gray Code</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
