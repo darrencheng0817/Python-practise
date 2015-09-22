@@ -754,7 +754,7 @@
     <td>100</td>
     <td>Same Tree</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   </table>
