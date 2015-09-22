@@ -705,28 +705,28 @@
     <td>93</td>
     <td>Restore IP Addresses</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
     <td>94</td>
     <td>Binary Tree Inorder Traversal</td> 
     <td></td>
-    <td></td>
-    <td></td>
+    <td>Yes</td>
+    <td>Iteration also have space complexity is O(1) </td>
   </tr>
   <tr>
     <td>95</td>
     <td>Unique Binary Search Trees II</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
     <td>96</td>
     <td>Unique Binary Search Trees</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
