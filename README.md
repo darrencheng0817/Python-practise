@@ -740,7 +740,7 @@
     <td>98</td>
     <td>Validate Binary Search Tree</td> 
     <td></td>
-    <td></td>
+    <td>Yes</td>
     <td></td>
   </tr>
   <tr>
